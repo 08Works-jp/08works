@@ -149,3 +149,45 @@
 
 /* Ver.08 content showcase */
 .garage-detail-cta{max-width:1120px;border-top:1px solid #a5e9e65c;padding:24px 0 45px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}.garage-detail-cta p{font-weight:900;letter-spacing:.08em;font-size:12px;color:#fff;margin:0 auto 0 0}.garage-detail-cta a{background:#a5e9e6;color:#061315;text-decoration:none;font-weight:900;padding:14px 20px;font-size:13px}.garage-detail-cta span{font-size:11px;color:#a5c2c0;width:100%}.garage-item{transition:transform .2s,border-color .2s}.garage-item:hover{transform:translateY(-3px);border-color:#a5e9e6}.garage-item-body{min-height:170px}.garage-item h4{overflow-wrap:anywhere}
+
+/* Ver.08.1 — mobile garage: show the whole scene, with accessible navigation below */
+@media (max-width:760px) {
+  .garage-scene {
+    background-color:#061114!important;
+    background-image:url('assets/garage-headlights.jpg')!important;
+    background-size:100% auto!important;
+    background-position:center 72px!important;
+    background-repeat:no-repeat!important;
+    overflow-y:auto!important;
+    overscroll-behavior:contain;
+  }
+  .garage-top {position:absolute;top:0;left:0;right:0;height:72px;padding:12px 4%;background:#061114;z-index:6;gap:8px}
+  .garage-top span{font-size:9px;letter-spacing:.07em;white-space:nowrap}
+  .garage-top button{padding:12px 10px;font-size:10px;white-space:nowrap}
+  .garage-shade{display:none!important}
+  .garage-heading,.garage-hint{display:none!important}
+  .garage-hotspot,
+  .garage-hotspot.h-archive,.garage-hotspot.h-projects,
+  .garage-hotspot.h-apparel,.garage-hotspot.h-drop {
+    position:absolute!important;right:auto!important;bottom:auto!important;
+    transform:none!important;margin:0!important;
+    width:calc(50% - 18px)!important;height:64px!important;
+    min-height:64px!important;display:flex!important;
+    align-items:center;justify-content:center;
+    border:1px solid #7ccbc6a8!important;border-radius:6px!important;
+    background:#102527!important;box-shadow:none!important;
+    color:#e9ffff!important;
+  }
+  .garage-hotspot .hotspot-dot{display:none!important}
+  .garage-hotspot .hotspot-label{display:block!important;border:0!important;background:none!important;box-shadow:none!important;font-size:13px!important;letter-spacing:.07em;text-align:center;padding:0!important}
+  .garage-hotspot .hotspot-label small{display:none!important}
+  .garage-hotspot.h-archive{top:calc(72px + 56.31vw + 24px)!important;left:12px!important}
+  .garage-hotspot.h-projects{top:calc(72px + 56.31vw + 24px)!important;left:calc(50% + 6px)!important}
+  .garage-hotspot.h-apparel{top:calc(72px + 56.31vw + 100px)!important;left:12px!important}
+  .garage-hotspot.h-drop{top:calc(72px + 56.31vw + 100px)!important;left:calc(50% + 6px)!important}
+  .impala-hotspot{position:absolute!important;top:calc(72px + 27vw)!important;bottom:auto!important;right:0!important;width:20%!important;height:calc(28vw)!important;z-index:5}
+  .headlight-dimmer,.headlight-glow{display:none!important}
+  .garage-scene.lights-on:after{content:'';position:absolute;top:calc(72px + 30vw);bottom:auto;right:0;width:24%;height:22vw;background:radial-gradient(ellipse at 85% 60%,#ffe3a077,transparent 75%);pointer-events:none}
+  .garage-detail{position:fixed!important;inset:0!important;padding:24px 6%!important;z-index:8!important}
+  .garage-detail h3{font-size:clamp(42px,14vw,70px)!important}
+}
