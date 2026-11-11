@@ -11,14 +11,15 @@
 <div class="secret-overlay" id="secret-overlay" role="dialog" aria-modal="true" aria-label="08Works Secret Garage" aria-hidden="true">
  <div class="secret-shutter" aria-hidden="true"></div>
  <div class="garage-scene">
-  <div class="garage-shade"></div><div class="garage-fence" aria-hidden="true"></div>
+  <div class="garage-shade"></div><div class="headlight-dimmer" aria-hidden="true"></div><div class="headlight-glow" aria-hidden="true"></div>
   <div class="garage-top"><span>08WORKS / RESTRICTED AREA</span><button id="secret-close" type="button">EXIT GARAGE ×</button></div>
   <div class="garage-heading"><span>ACCESS GRANTED / #008</span><h2>SECRET<br>GARAGE.</h2><p>気になる場所をタップしてみろ。<br>ここは08Worksの裏側。</p></div>
   <button class="garage-hotspot h-projects" data-zone="projects"><span class="hotspot-dot"></span><span class="hotspot-label">PROJECTS <small>実験・試作品</small></span></button>
   <button class="garage-hotspot h-archive" data-zone="archive"><span class="hotspot-dot"></span><span class="hotspot-label">ARCHIVE <small>ボツ案・ラフ</small></span></button>
   <button class="garage-hotspot h-apparel" data-zone="apparel"><span class="hotspot-dot"></span><span class="hotspot-label">APPAREL LAB <small>アパレル実験室</small></span></button>
   <button class="garage-hotspot h-drop" data-zone="drop"><span class="hotspot-dot"></span><span class="hotspot-label">SECRET DROP <small>COMING SOON</small></span></button>
-  <div class="garage-hint">● TAP THE GLOWING MARKERS TO EXPLORE</div>
-  <div class="garage-detail" id="garage-detail" hidden><button type="button" id="garage-back">← BACK TO GARAGE</button><span id="garage-number">AREA 01</span><h3 id="garage-title">PROJECTS</h3><p id="garage-description"></p><div class="garage-empty"><span>08W / UNDER CONSTRUCTION</span><strong>MORE TO COME.</strong><small>ここに実際の制作写真や試作を追加予定。</small></div></div>
+  <button type="button" class="impala-hotspot" id="impala-hotspot" aria-label="インパラのヘッドライトを点灯・消灯" aria-pressed="false"><span class="visually-hidden">ヘッドライトを切り替える</span></button>
+  <div class="garage-hint">TAP THE SIGNS TO EXPLORE</div>
+  <div class="garage-detail" id="garage-detail" hidden><button type="button" id="garage-back">← BACK TO GARAGE</button><span id="garage-number">AREA 01</span><h3 id="garage-title">PROJECTS</h3><p id="garage-description"></p><div id="garage-items" class="garage-items" aria-live="polite"></div><div class="garage-empty" id="garage-empty"><span>08W / UNDER CONSTRUCTION</span><strong>MORE TO COME.</strong><small>新しい作品を準備中。</small></div><div class="garage-detail-cta"><p>YOUR IDEA, OUR NEXT PROJECT.</p><a href="#contact" id="garage-contact-link">製作の相談・お見積もり ↗</a><span>※写真・実績は順次公開予定</span></div></div>
  </div>
-</div><script src="script.js"></script></body></html>
+</div><script src="garage-content.js"></script><script src="script.js"></script></body></html>
