@@ -250,3 +250,10 @@
   footer .official-wordmark img { width: 132px; max-width: 132px; max-height: 32px; }
   .official-original img { width: min(100%, 285px); max-width: 285px; }
 }
+
+/* v08.5: explicit dimensions and correct artwork colors */
+.nav a.official-wordmark, footer a.official-wordmark {display:inline-flex!important;align-items:center!important;flex:0 0 auto!important;width:auto!important;max-width:160px!important;height:auto!important;line-height:0!important;}
+.nav a.official-wordmark img {display:block!important;width:148px!important;max-width:148px!important;height:auto!important;max-height:40px!important;object-fit:contain!important;filter:none!important;}
+footer a.official-wordmark img {display:block!important;width:132px!important;max-width:132px!important;height:auto!important;max-height:36px!important;object-fit:contain!important;filter:none!important;}
+.official-original img {display:block!important;width:min(100%,285px)!important;max-width:285px!important;height:auto!important;filter:none!important;object-fit:contain!important;}
+@media(max-width:760px){.nav a.official-wordmark img{width:132px!important;max-width:132px!important;max-height:36px!important}footer a.official-wordmark img{width:124px!important;max-width:124px!important}.official-original img{width:min(85vw,285px)!important}}
