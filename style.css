@@ -243,3 +243,10 @@
 .official-original img{display:block;width:min(100%,460px);height:auto;object-fit:contain}
 .official-original span{display:block;margin:0;font:700 12px Inter,sans-serif;letter-spacing:4px}
 @media(max-width:760px){.official-wordmark img{width:142px;max-height:36px}.official-original img{width:min(85vw,360px)}}
+
+/* v08.4: restrained official logo sizing on desktop only */
+@media (min-width: 761px) {
+  .nav .official-wordmark img { width: 148px; max-width: 148px; max-height: 35px; }
+  footer .official-wordmark img { width: 132px; max-width: 132px; max-height: 32px; }
+  .official-original img { width: min(100%, 285px); max-width: 285px; }
+}
