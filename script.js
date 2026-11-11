@@ -1,1 +1,9 @@
 const menu=document.querySelector('.menu');const nav=document.querySelector('.nav nav');menu.addEventListener('click',()=>{const opened=nav.classList.toggle('open');menu.setAttribute('aria-expanded',String(opened));});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menu.setAttribute('aria-expanded','false');}));document.getElementById('year').textContent=new Date().getFullYear();
+
+
+// Secret Garage: triple tap/click within 1.1 seconds between taps.
+(()=>{const logo=document.getElementById('secret-logo');const overlay=document.getElementById('secret-overlay');const flash=document.getElementById('secret-flash');const close=document.getElementById('secret-close');if(!logo||!overlay||!flash||!close)return;let count=0,last=0,previousFocus=null;const reduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+function tap(){const now=Date.now();if(now-last>1100)count=0;last=now;count++;logo.classList.remove('charge','glitch','burst');void logo.offsetWidth;if(count===1)logo.classList.add('charge');if(count===2)logo.classList.add('glitch');if(count>=3){count=0;logo.classList.add('burst');flash.classList.remove('fire');void flash.offsetWidth;if(!reduced)flash.classList.add('fire');previousFocus=document.activeElement;setTimeout(()=>{overlay.classList.add('show');overlay.setAttribute('aria-hidden','false');document.body.style.overflow='hidden';close.focus()},reduced?0:350)}}
+function hide(){overlay.classList.remove('show');overlay.setAttribute('aria-hidden','true');document.body.style.overflow='';(previousFocus||logo).focus()}
+logo.addEventListener('click',tap);logo.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();tap()}});close.addEventListener('click',hide);document.addEventListener('keydown',e=>{if(e.key==='Escape'&&overlay.classList.contains('show'))hide();if(e.key==='Tab'&&overlay.classList.contains('show')){e.preventDefault();close.focus()}});
+})();
