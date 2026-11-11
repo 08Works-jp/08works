@@ -1,0 +1,17 @@
+08WORKS Ver.08 — 更新ガイド
+
+1. assets/works/ に写真（JPG/PNG/WebP）を追加
+2. garage-content.js をテキストエディタで開く
+3. window.GARAGE_CONTENT 配列の項目をコピーして内容を変更
+   zone: projects / archive / apparel / drop
+   title: 見出し
+   date: 日付・分類
+   description: 説明文
+   image: assets/works/写真名.jpg （写真なしなら空文字）
+   link: https:// から始まる外部URL（不要なら空文字）
+   published: true 表示 / false 非表示
+4. Macで index.html を開いて動作確認
+5. GitHubに更新したファイルと画像をアップロード
+
+注意: 現在の紹介文は掲載用の構成例です。実際の実績写真や販売情報は未登録です。
+トップ、シャッター、ガレージ画像、看板、ヘッドライト演出はVer.07.3を維持しています。
