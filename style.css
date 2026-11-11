@@ -191,3 +191,55 @@
   .garage-detail{position:fixed!important;inset:0!important;padding:24px 6%!important;z-index:8!important}
   .garage-detail h3{font-size:clamp(42px,14vw,70px)!important}
 }
+
+/* Ver.08.2 — mobile-only: interactive image signs + vintage metal menu */
+.garage-image-tap{display:none}
+@media(max-width:760px){
+  /* 16:9 image at natural viewport width, starting 72px below the header */
+  .garage-image-tap{
+    display:block;position:absolute;z-index:5;padding:0;margin:0;
+    border:1px solid transparent;background:transparent;border-radius:3px;
+    cursor:pointer;touch-action:manipulation;
+  }
+  .garage-image-tap:active,.garage-image-tap:focus-visible{
+    outline:2px solid #a5e9e6;outline-offset:1px;
+    background:#a5e9e622;box-shadow:0 0 18px #a5e9e6aa;
+  }
+  .sign-archive{left:12%;top:calc(72px + 17.1vw);width:17%;height:8.8vw}
+  .sign-projects{left:73%;top:calc(72px + 17.1vw);width:18%;height:8.8vw}
+  .sign-apparel{left:41%;top:calc(72px + 36.2vw);width:22%;height:8.4vw}
+  .sign-drop{left:74%;top:calc(72px + 32.8vw);width:17%;height:8.7vw}
+  /* Re-skin existing fallback controls: industrial signboards rather than plain rectangles */
+  .garage-hotspot,
+  .garage-hotspot.h-archive,.garage-hotspot.h-projects,
+  .garage-hotspot.h-apparel,.garage-hotspot.h-drop{
+    height:72px!important;min-height:72px!important;
+    border:1px solid #8caa9d!important;border-radius:3px!important;
+    background:linear-gradient(155deg,#26383a 0%,#152628 24%,#0a1719 75%,#1a2b2c 100%)!important;
+    box-shadow:inset 0 1px 0 #ffffff24,inset 0 -3px 0 #0008,0 5px 12px #0008!important;
+    overflow:hidden;letter-spacing:.13em;
+    transition:background .2s,box-shadow .2s,transform .2s;
+  }
+  .garage-hotspot::before,.garage-hotspot::after{
+    content:'';position:absolute;top:8px;width:5px;height:5px;border-radius:50%;
+    background:radial-gradient(circle at 35% 35%,#c5c8bd,#4d6462 65%,#152021);
+    box-shadow:0 0 0 1px #0009;
+  }
+  .garage-hotspot::before{left:8px}.garage-hotspot::after{right:8px}
+  .garage-hotspot .hotspot-label{font-family:Impact,'Arial Narrow',sans-serif!important;font-size:clamp(15px,4vw,21px)!important;font-weight:900!important;letter-spacing:.075em!important;text-shadow:0 2px 2px #000!important;color:#e8f8f3!important}
+  .garage-hotspot:active,.garage-hotspot:focus-visible{
+    outline:2px solid #a5e9e6!important;outline-offset:2px!important;
+    box-shadow:0 0 20px #72e4d477,inset 0 1px 0 #ffffff38!important;
+    background:linear-gradient(150deg,#294a4a,#102728)!important;
+  }
+  .garage-hotspot.h-apparel,.garage-hotspot.h-drop{top:calc(72px + 56.31vw + 112px)!important}
+  .impala-hotspot{z-index:5}
+}
+
+/* v08.3: official brand artwork outside the untouched hero neon logo */
+.official-wordmark{display:inline-flex;align-items:center;flex:0 0 auto;line-height:1;min-width:0}
+.official-wordmark img{display:block;width:clamp(136px,14vw,186px);height:auto;max-height:46px;object-fit:contain;filter:brightness(0) invert(1)}
+.official-original{font-size:initial;letter-spacing:normal;line-height:normal;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:28px;min-width:0}
+.official-original img{display:block;width:min(100%,460px);height:auto;object-fit:contain}
+.official-original span{display:block;margin:0;font:700 12px Inter,sans-serif;letter-spacing:4px}
+@media(max-width:760px){.official-wordmark img{width:142px;max-height:36px}.official-original img{width:min(85vw,360px)}}
