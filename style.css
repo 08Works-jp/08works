@@ -443,3 +443,12 @@ body{background:#101719}
 @keyframes works-ticker-scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 @media(max-width:760px){.ticker .ticker-track{animation-duration:24s!important}.ticker .ticker-copy{font-size:16px!important;letter-spacing:4px!important;padding-right:40px!important}}
 @media(prefers-reduced-motion:reduce){.ticker .ticker-track{animation:none!important}}
+
+/* V10.24 Instagram links — restrained turquoise garage accent */
+.instagram-header{display:inline-flex;align-items:center;justify-content:center;color:#70ddd5;flex:0 0 auto;min-width:42px;min-height:42px;border-radius:8px;transition:color .2s,background .2s}
+.instagram-header:hover,.instagram-header:focus-visible{color:#b5fff7;background:#70ddd51a;outline-offset:2px}
+.instagram-header svg{display:block}
+.instagram-footer{display:inline-flex;align-items:center;gap:9px;color:#70ddd5;font:600 12px Inter,sans-serif;letter-spacing:.2px;white-space:nowrap;min-height:42px}
+.instagram-footer:hover,.instagram-footer:focus-visible{color:#b5fff7}
+.instagram-footer svg{width:20px;height:20px;flex:none}
+@media(max-width:760px){.nav .instagram-header{margin-left:auto;margin-right:8px;order:1}.nav .menu{order:2}.nav nav{order:3}.instagram-header{min-width:40px;min-height:44px}footer .instagram-footer{order:3;width:100%}}
