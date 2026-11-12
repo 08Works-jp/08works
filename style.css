@@ -434,3 +434,12 @@ body{background:#101719}
   background-color:#17130f!important;
  }
 }
+
+/* V10.21 continuous marquee ticker — desktop and mobile */
+.ticker{overflow:hidden!important}
+.ticker .ticker-track{display:flex!important;align-items:center;width:max-content!important;max-width:none!important;text-align:left!important;gap:0!important;animation:works-ticker-scroll 28s linear infinite!important;will-change:transform}
+.ticker .ticker-copy{display:block!important;flex:0 0 auto!important;white-space:nowrap!important;padding-right:52px!important;font:700 17px 'Barlow Condensed',Impact,sans-serif!important;letter-spacing:5px!important}
+.ticker .ticker-copy .ticker-separator{margin:0 15px!important}
+@keyframes works-ticker-scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media(max-width:760px){.ticker .ticker-track{animation-duration:24s!important}.ticker .ticker-copy{font-size:16px!important;letter-spacing:4px!important;padding-right:40px!important}}
+@media(prefers-reduced-motion:reduce){.ticker .ticker-track{animation:none!important}}
