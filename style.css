@@ -467,7 +467,7 @@ body{background:#101719}
 #services .vector-feature .btn.light{display:inline-flex;gap:18px;align-items:center;justify-content:center;min-height:57px;margin-top:16px;padding:13px 22px;border:1px solid #aa9577;border-radius:2px;background:#f0dfc2;color:#151515;font-weight:800;box-shadow:0 4px 0 #56412e;transition:transform .2s,background .2s,box-shadow .2s}
 #services .vector-feature .btn.light:before{content:'▰ ▰ ▰';font-size:13px;letter-spacing:-3px;color:#0caeba;margin-right:7px}
 #services .vector-feature .btn.light:hover{background:#fff0d3;transform:translateY(-2px);box-shadow:0 6px 0 #56412e}
-#services .vector-feature .vector-art{border:0;min-height:530px;background:#141414 url('assets/vector-studio-v1027.webp') center center/cover no-repeat}
+#services .vector-feature .vector-art{border:0;min-height:530px;background:#141414 url('assets/vector-studio-v1028.webp') center center/cover no-repeat}
 @media(max-width:900px){#services .vector-feature-body{grid-template-columns:1fr}#services .vector-feature-body>div:first-child{padding:34px 25px 30px;background:#111}#services .vector-feature .vector-art{min-height:330px;background-position:center center}#services .vector-feature h3{font-size:clamp(65px,12vw,110px)}}
 @media(max-width:520px){#services .vector-feature{margin-top:28px}#services .vector-feature-body>div:first-child{padding:30px 20px}#services .vector-feature h3{font-size:clamp(59px,14vw,82px);margin:18px 0 22px}#services .vector-feature .vector-art{min-height:230px}#services .vector-feature .btn.light{font-size:13px;padding:12px 13px;min-height:52px}#services .vector-feature p:not(.heading-ja){font-size:12px;line-height:1.8}}
 
