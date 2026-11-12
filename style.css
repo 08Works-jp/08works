@@ -427,7 +427,7 @@ body{background:#101719}
 /* V10.20 — mobile: preserve multiple real photographic festoon bulbs. Desktop unchanged. */
 @media(max-width:760px){
  #services.westcoast-services{
-  background-image:url('assets/warm-wall-mobile-3lights.jpg')!important;
+  background-image:url('assets/warm-wall-mobile-natural-v1022.jpg')!important;
   background-size:100% auto!important;
   background-position:center top!important;
   background-repeat:no-repeat!important;
