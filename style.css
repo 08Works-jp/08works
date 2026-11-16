@@ -492,3 +492,35 @@ body{background:#101719}
 /* Ver10.27: no wall logo, no underline or shadow on VECTOR. */
 #services .vector-feature h3 em{display:inline-block;color:#11bbca;text-shadow:none!important;text-decoration:none!important;border-bottom:0!important;box-shadow:none!important;background-image:none!important;filter:none!important}
 #services .vector-feature h3 em::before,#services .vector-feature h3 em::after{content:none!important;display:none!important}
+
+/* Ver10.29 — 08Works real client work / garage gallery */
+#works{position:relative;overflow:hidden;background:radial-gradient(ellipse at 78% 22%,#30271f 0,transparent 40%),linear-gradient(140deg,#171717,#0b0c0d 75%);border-top:1px solid #433c35}
+#works:before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.16;background:repeating-linear-gradient(0deg,transparent 0 42px,#fff1 43px 44px)}
+#works>*{position:relative;z-index:1}
+#works .works-kicker{font-family:'Barlow Condensed',Impact,sans-serif;letter-spacing:.28em;color:#11b8c4;font-size:13px;font-weight:800;margin-top:26px}
+#works .works-title{margin-top:6px}
+#works .works-case{margin-top:34px;background:#0e0f10;border:1px solid #5b554d;box-shadow:0 22px 55px #0008;overflow:hidden}
+#works .works-case-top{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:15px 24px;background:#191a1b;border-bottom:1px solid #534a40;color:#d5c6ae;font-size:11px;letter-spacing:.2em;font-weight:700}
+#works .works-case-top span:first-child{color:#12b9c5}
+#works .works-hero{position:relative;background:#101010;overflow:hidden}
+#works .works-hero img{display:block;width:100%;height:auto;max-height:740px;object-fit:cover;object-position:center}
+#works .works-info{display:grid;grid-template-columns:1fr 1fr;gap:28px;padding:36px 34px;border-top:3px solid #12b9c5;background:linear-gradient(105deg,#19191a,#101112)}
+#works .works-label{font-size:12px;color:#13bdc7;letter-spacing:.24em;font-weight:800}
+#works .works-info h3{color:#f5eee3;font-size:clamp(27px,3.5vw,47px);line-height:1.2;margin:12px 0 16px}
+#works .works-info h3 i{font-family:Georgia,serif;font-weight:400;color:#d8c7aa}
+#works .works-lead{font-size:clamp(16px,1.7vw,21px);color:#f1e8db;font-weight:700}
+#works .works-info-copy>p{color:#d6d2cb;font-size:14px;line-height:2;margin:0 0 20px}
+#works .works-tags{display:flex;gap:8px;flex-wrap:wrap}
+#works .works-tags span{border:1px solid #5c645f;color:#b7c8c7;font-size:10px;letter-spacing:.08em;padding:8px 10px}
+#works .works-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:3px;background:#262525;border-top:3px solid #272727}
+#works .works-photo{position:relative;margin:0;overflow:hidden;background:#141414}
+#works .works-photo img{width:100%;height:300px;object-fit:cover;display:block;filter:contrast(1.09) saturate(.83);transition:transform .4s,filter .4s}
+#works .works-photo:hover img{transform:scale(1.035);filter:contrast(1.06) saturate(1)}
+#works .works-photo figcaption{position:absolute;bottom:0;left:0;right:0;display:flex;flex-direction:column;gap:4px;padding:36px 16px 16px;background:linear-gradient(transparent,#080808ed);color:#f3eee7}
+#works .works-photo figcaption b{font-size:12px;letter-spacing:.12em;color:#16c0c9}
+#works .works-photo figcaption span{font-size:13px;font-weight:700}
+#works .works-bottom{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;padding:24px 32px;background:#121415;color:#b7a995;font-size:11px;letter-spacing:.15em}
+#works .works-bottom a{display:inline-flex;align-items:center;gap:15px;border:1px solid #12b9c5;color:#e9f8f8;text-decoration:none;padding:13px 18px;letter-spacing:0;font-weight:700;font-size:13px}
+#works .works-bottom a:hover{background:#0d6870}
+#works .works-privacy{margin:20px 0 0;color:#b7b0a7;font-size:12px;line-height:1.8}
+@media(max-width:720px){#works .works-info{grid-template-columns:1fr;padding:25px 20px;gap:12px}#works .works-gallery{grid-template-columns:1fr}#works .works-photo img{height:280px}#works .works-case-top{padding:13px 16px;font-size:10px}#works .works-bottom{padding:20px;align-items:flex-start}#works .works-hero img{max-height:none}}
