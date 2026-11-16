@@ -1,0 +1,20 @@
+/* 08Works ORIGINALS lookbook / v10.53: isolated from existing section styles */
+.originals-lookbook{background:#101719;color:#f1efe9;padding:0 clamp(22px,5.5vw,90px) 64px;border-top:1px solid #3b5555}
+.originals-lookbook-head{display:flex;justify-content:space-between;gap:18px;padding:25px 0;border-bottom:1px solid #3a4949;font:700 11px/1.5 Arial,sans-serif;letter-spacing:.23em;color:#6fd3d1}
+.originals-lookbook-head strong{color:#e5e5df;font-weight:700}
+.originals-lookbook-lead{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:end;padding:52px 0 38px}
+.originals-lookbook .ol-kicker{color:#69cece;font-size:12px;letter-spacing:.25em;font-weight:800}
+.originals-lookbook h3{font-family:Impact,'Arial Narrow',sans-serif;font-size:clamp(48px,7vw,110px);line-height:.91;letter-spacing:.01em;margin:15px 0 0;color:#f5f4ec}
+.originals-lookbook h3 em{font-style:normal;color:#a5e8e4}
+.originals-lookbook-lead p{font-size:clamp(13px,1.3vw,17px);line-height:2;max-width:550px;color:#d3d4d0;margin:0}
+.originals-lookbook-grid{display:grid;grid-template-columns:1.25fr 1fr;gap:16px}
+.originals-lookbook-grid figure{position:relative;min-width:0;margin:0;overflow:hidden;background:#202627;border:1px solid #485353}
+.originals-lookbook-grid img{display:block;width:100%;height:100%;object-fit:cover}
+.originals-lookbook-grid .ol-feature{grid-row:span 2;min-height:550px}
+.originals-lookbook-grid .ol-catalog,.originals-lookbook-grid .ol-tee{min-height:265px}
+.originals-lookbook-grid figcaption{position:absolute;bottom:0;left:0;right:0;display:flex;justify-content:space-between;gap:10px;align-items:center;padding:27px 20px 17px;background:linear-gradient(transparent,#080c0dd9);font-size:11px;letter-spacing:.12em;color:#78d8d5;font-weight:700}
+.originals-lookbook-grid figcaption strong{color:#fff;font-size:12px}
+.originals-lookbook-foot{display:flex;justify-content:space-between;align-items:center;gap:20px;padding-top:30px;font-size:11px;letter-spacing:.14em;color:#9fa9a8}
+.originals-lookbook-foot a{border:1px solid #65cecc;padding:16px 20px;color:#fff;text-decoration:none;font-size:13px;letter-spacing:0;font-weight:700}
+.originals-lookbook-foot a:hover{background:#1a4445}
+@media(max-width:760px){.originals-lookbook{padding:0 20px 38px}.originals-lookbook-head{font-size:9px;letter-spacing:.12em}.originals-lookbook-lead{grid-template-columns:1fr;gap:22px;padding:38px 0 28px}.originals-lookbook h3{font-size:clamp(52px,13vw,85px)}.originals-lookbook-grid{grid-template-columns:1fr;gap:14px}.originals-lookbook-grid .ol-feature{grid-row:auto;min-height:0}.originals-lookbook-grid .ol-catalog,.originals-lookbook-grid .ol-tee{min-height:0}.originals-lookbook-grid img{height:auto;object-fit:contain}.originals-lookbook-grid figcaption{padding:30px 14px 12px;font-size:9px}.originals-lookbook-grid figcaption strong{font-size:10px}.originals-lookbook-foot{align-items:flex-start;flex-direction:column}}
