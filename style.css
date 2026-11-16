@@ -541,3 +541,6 @@ body{background:#101719}
 #works .works-photo img{object-fit:cover;object-position:center center;filter:none}
 #works .works-hero img{object-fit:cover;object-position:center center}
 @media(max-width:720px){#works .works-photo img{height:310px;object-fit:cover}}
+
+/* V10.36: preserve the full desktop banner instead of cropping */
+@media(min-width:721px){#works .works-hero img{width:100%;height:auto;max-height:none!important;object-fit:contain!important;object-position:center!important}}
