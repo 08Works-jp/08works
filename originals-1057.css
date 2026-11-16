@@ -1,0 +1,6 @@
+/* 08Works ORIGINALS v10.57 — one clean editorial image, no repeated slogans */
+.originals-lookbook{background:#101719;padding:clamp(18px,3vw,42px) clamp(18px,5.5vw,90px) clamp(22px,4vw,56px);border-top:1px solid #355254}
+.originals-campaign-visual{margin:0 auto;max-width:1500px;overflow:hidden;background:#101719}
+.originals-campaign-visual img{display:block;width:100%;height:auto;aspect-ratio:1167/941;object-fit:contain}
+@media(min-width:950px){.originals-campaign-visual{max-width:1167px}}
+@media(max-width:700px){.originals-lookbook{padding:16px 12px 26px}}
