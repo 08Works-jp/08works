@@ -1,0 +1,11 @@
+/* 08Works ORIGINALS campaign v10.56 — single editorial visual */
+.originals-lookbook{background:#101719;color:#f4f5f1;padding:0 clamp(18px,5.5vw,90px) 42px;border-top:1px solid #355254}
+.originals-campaign-top,.originals-campaign-bottom{display:flex;align-items:center;justify-content:space-between;gap:18px;font:700 11px/1.5 Arial,sans-serif;letter-spacing:.19em}
+.originals-campaign-top{padding:24px 0;color:#73d6d4}
+.originals-campaign-top span:last-child{color:#e2e5e2}
+.originals-campaign-visual{margin:0;overflow:hidden;background:#12191b}
+.originals-campaign-visual img{display:block;width:100%;height:auto;aspect-ratio:1672/941;object-fit:contain}
+.originals-campaign-bottom{padding-top:24px;color:#aab6b4}
+.originals-campaign-bottom a{color:#fff;border:1px solid #64caca;padding:14px 18px;text-decoration:none;letter-spacing:0;font-size:13px}
+.originals-campaign-bottom a:hover{background:#184447}
+@media(max-width:700px){.originals-lookbook{padding:0 16px 32px}.originals-campaign-top{padding:18px 0;font-size:9px;letter-spacing:.09em}.originals-campaign-visual img{height:auto;object-fit:contain}.originals-campaign-bottom{align-items:flex-start;flex-direction:column;font-size:10px;gap:16px}}
