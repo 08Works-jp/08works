@@ -578,3 +578,13 @@ body{background:#101719}
 
 /* Ver10.39: updated approved product images, no aggressive crop */
 @media(min-width:721px){#works .works-hero-product img{object-fit:contain!important;background:#151515}#works .works-hero-products{grid-template-rows:minmax(250px,1.1fr) minmax(240px,1fr)}}
+
+/* V10.40 — cinematic campaign image in hero; gallery remains original photo proof */
+@media(min-width:721px){
+ #works .works-hero-desktop{grid-template-columns:minmax(300px,37%) minmax(0,63%);min-height:0}
+ #works .works-hero-products.works-hero-cinematic{display:block;position:relative;overflow:hidden;background:#0b0e0e;min-height:440px}
+ #works .works-hero-products.works-hero-cinematic>img{display:block;width:100%;height:100%;min-height:440px;max-height:none!important;object-fit:cover!important;object-position:center center!important;background:none!important}
+}
+
+/* Ver10.41: faithful print details from actual product photographs */
+@media(min-width:721px){#works .works-hero-products.works-hero-cinematic>img{object-fit:contain!important;height:auto!important;min-height:0!important;max-height:none!important}#works .works-hero-products.works-hero-cinematic{min-height:0!important;display:flex;align-items:center;justify-content:center}}
