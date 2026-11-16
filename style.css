@@ -575,3 +575,6 @@ body{background:#101719}
  #works .works-hero-award img{object-position:center 45%}
 }
 @media(max-width:720px){#works .works-hero-products{display:none}}
+
+/* Ver10.39: updated approved product images, no aggressive crop */
+@media(min-width:721px){#works .works-hero-product img{object-fit:contain!important;background:#151515}#works .works-hero-products{grid-template-rows:minmax(250px,1.1fr) minmax(240px,1fr)}}
