@@ -536,3 +536,8 @@ body{background:#101719}
 
 /* v10.32 gallery photos: preserve product artwork, avoid distorted image crops */
 #works .works-gallery .works-photo img{object-position:center center;}
+
+/* Ver10.33: approved photo composition, no distortion or masking */
+#works .works-photo img{object-fit:cover;object-position:center center;filter:none}
+#works .works-hero img{object-fit:cover;object-position:center center}
+@media(max-width:720px){#works .works-photo img{height:310px;object-fit:cover}}
