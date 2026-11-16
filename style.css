@@ -524,3 +524,7 @@ body{background:#101719}
 #works .works-bottom a:hover{background:#0d6870}
 #works .works-privacy{margin:20px 0 0;color:#b7b0a7;font-size:12px;line-height:1.8}
 @media(max-width:720px){#works .works-info{grid-template-columns:1fr;padding:25px 20px;gap:12px}#works .works-gallery{grid-template-columns:1fr}#works .works-photo img{height:280px}#works .works-case-top{padding:13px 16px;font-size:10px}#works .works-bottom{padding:20px;align-items:flex-start}#works .works-hero img{max-height:none}}
+
+/* Ver10.30: original product photographs; avoid poster art and keep text as HTML */
+#works .works-hero img{max-height:580px;object-fit:cover}
+@media(max-width:720px){#works .works-hero img{height:290px;max-height:none;object-fit:cover;object-position:center}}
