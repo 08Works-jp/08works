@@ -528,3 +528,11 @@ body{background:#101719}
 /* Ver10.30: original product photographs; avoid poster art and keep text as HTML */
 #works .works-hero img{max-height:580px;object-fit:cover}
 @media(max-width:720px){#works .works-hero img{height:290px;max-height:none;object-fit:cover;object-position:center}}
+
+/* Ver10.31: truthful, non-masked original product photography */
+#works .works-photo img{filter:none;object-position:center center}
+#works .works-photo:hover img{filter:none}
+@media(max-width:720px){#works .works-photo img{height:310px;object-fit:cover}}
+
+/* v10.32 gallery photos: preserve product artwork, avoid distorted image crops */
+#works .works-gallery .works-photo img{object-position:center center;}
