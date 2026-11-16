@@ -623,3 +623,16 @@ body{background:#101719}
 @media(max-width:900px){#works .works-v1043-story{grid-template-columns:1fr;gap:28px}}
 @media(max-width:720px){#works .works-v1043-cover>img{height:360px;object-position:57% center}#works .works-v1043-cover:after{background:linear-gradient(0deg,rgba(0,0,0,.92) 0%,rgba(0,0,0,.25) 55%,transparent 100%)}#works .works-v1043-cover-caption{left:20px;right:20px;bottom:24px}#works .works-v1043-cover-caption strong{font-size:36px}#works .works-v1043-cover-caption p{font-size:17px}#works .works-v1043-story{padding:28px 20px}#works .works-v1043-process ol{gap:6px}#works .works-v1043-process li{padding:12px 8px}#works .works-v1043-process li strong{font-size:12px}#works .works-v1043-process li small{font-size:10px}#works .works-v1043-gallery-label{display:block;padding:18px 20px}#works .works-v1043-gallery-label p{margin-top:8px}}
 @media(max-width:390px){#works .works-v1043-process ol{grid-template-columns:1fr}#works .works-v1043-process li{padding:12px 15px}#works .works-v1043-process li b{margin-bottom:3px}}
+
+/* V10.47: approved cinematic garage hero with baked-in typography; avoid duplicate captions. */
+#works .works-v1043-cover>img{height:auto;aspect-ratio:3/1;object-fit:contain;object-position:center;max-height:none}
+#works .works-v1043-cover:after{display:none}
+#works .works-v1043-cover-caption{display:none}
+@media(max-width:720px){
+ #works .works-v1043-cover>img{height:310px;aspect-ratio:auto;object-fit:cover;object-position:77% center}
+ #works .works-v1043-cover:after{display:block;background:linear-gradient(0deg,rgba(0,0,0,.87),transparent 65%)}
+ #works .works-v1043-cover-caption{display:block;left:18px;right:18px;bottom:20px}
+ #works .works-v1043-cover-caption>span{font-size:9px}
+ #works .works-v1043-cover-caption strong{font-size:31px;margin:7px 0}
+ #works .works-v1043-cover-caption p{font-size:13px}
+}
