@@ -588,3 +588,13 @@ body{background:#101719}
 
 /* Ver10.41: faithful print details from actual product photographs */
 @media(min-width:721px){#works .works-hero-products.works-hero-cinematic>img{object-fit:contain!important;height:auto!important;min-height:0!important;max-height:none!important}#works .works-hero-products.works-hero-cinematic{min-height:0!important;display:flex;align-items:center;justify-content:center}}
+
+/* V10.42: same approved workshop products for desktop and mobile. */
+#works .works-hero-desktop{grid-template-columns:minmax(280px,37%) minmax(0,63%);align-items:stretch}
+#works .works-hero-products.works-hero-cinematic{display:flex;align-items:stretch;justify-content:center;min-height:480px;background:#121313}
+#works .works-hero-products.works-hero-cinematic>img{width:100%;height:100%!important;min-height:480px!important;object-fit:cover!important;object-position:center center!important}
+@media(max-width:720px){
+ #works .works-hero-desktop{display:none!important}
+ #works .works-hero-mobile{display:block!important}
+ #works .works-hero-mobile img{width:100%!important;height:auto!important;aspect-ratio:1185/655;object-fit:contain!important;display:block;background:#111}
+}
