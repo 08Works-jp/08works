@@ -609,7 +609,7 @@ body{background:#101719}
 #works .works-v1043-cover-caption strong{display:block;margin:15px 0 10px;font-size:clamp(33px,4.5vw,75px);line-height:1.12;letter-spacing:-.035em}
 #works .works-v1043-cover-caption strong i{font-family:Georgia,serif;color:#e5d4b8;font-weight:400}
 #works .works-v1043-cover-caption p{margin:0;font-size:clamp(16px,1.6vw,26px);font-weight:800}
-#works .works-v1043-story{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:clamp(24px,4vw,72px);padding:clamp(28px,4vw,65px);border-top:3px solid #16b9c4;background:linear-gradient(115deg,#19191a,#111314)}
+#works .works-v1043-story{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:clamp(24px,4vw,72px);padding:clamp(28px,4vw,65px);border-top:0;background:linear-gradient(115deg,#19191a,#111314)}
 #works .works-v1043-intro h3{font-size:clamp(23px,2.3vw,37px);margin:15px 0;color:#f3ede4;line-height:1.4}
 #works .works-v1043-intro p{color:#d3cdc4;line-height:2;font-size:clamp(13px,1vw,16px);margin:0}
 #works .works-v1043-process ol{list-style:none;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:18px 0 0;padding:0}
