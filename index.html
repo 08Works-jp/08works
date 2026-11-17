@@ -136,6 +136,23 @@
   }
 }
 </style>
+
+<!-- Ver.10.69: CONTACT mobile-only clean stacked layout. Desktop untouched. -->
+<style id="contact-mobile-1069">
+@media (max-width:760px) {
+  .studio-contact-main {display:flex!important; flex-direction:column!important; align-items:stretch!important; min-height:0!important;}
+  .studio-contact-copy {order:1!important; position:relative!important; z-index:2!important; width:100%!important; padding:34px 0 0!important;}
+  .studio-contact-copy h2 {font-size:clamp(49px,10.6vw,82px)!important; line-height:1.02!important; margin-bottom:28px!important;}
+  .studio-contact-copy h3 {margin-bottom:20px!important;}
+  .studio-contact-copy p {max-width:100%!important;}
+  .studio-cta {max-width:none!important; width:100%!important; box-sizing:border-box!important; margin:28px 0 18px!important;}
+  .studio-ig {display:inline-block!important; position:relative!important; z-index:3!important; margin-bottom:25px!important; line-height:1.6!important;}
+  .studio-contact-photo {order:2!important; position:relative!important; inset:auto!important; width:100%!important; height:auto!important; min-height:0!important; aspect-ratio:1.65!important; overflow:hidden!important; background-size:auto,100% 100%!important; background-position:center,center!important; background-repeat:no-repeat!important;}
+  .studio-contact-photo::before {left:25%!important;top:22%!important;width:50%!important;height:65%!important;}
+  .studio-contact-photo::after {display:none!important;content:none!important;}
+  .studio-contact-photo .studio-wallmark {top:39%!important;right:32%!important;width:36%!important;max-width:none!important;opacity:1!important;filter:brightness(0) drop-shadow(0 0 1px rgba(255,222,172,.35))!important;}
+}
+</style>
 </head><body>
 <header class="nav"><a aria-label="08Works ホーム" class="wordmark official-wordmark" href="#home"><img alt="08WORKS" src="assets/logo-08works-white.png"/></a><button aria-expanded="false" aria-label="メニューを開く" class="menu">MENU <span>☰</span></button><nav id="navigation"><a href="#services">SERVICES</a><a href="#works">WORKS</a><a href="#originals">ORIGINALS</a><a href="#about">ABOUT</a><a class="navcontact" href="#contact">CONTACT ↗</a></nav><a aria-label="08Works公式Instagramを開く" class="instagram-header" href="https://www.instagram.com/08works_official/" rel="noopener noreferrer" target="_blank" title="Instagram @08works_official"><svg aria-hidden="true" fill="none" height="23" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24" width="23"><rect height="20" rx="5" width="20" x="2" y="2"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" fill="currentColor" r="1" stroke="none"></circle></svg></a></header>
 <main><section class="hero" id="home"><div class="hero-grain"></div><div aria-hidden="true" class="fence-backdrop"></div><div aria-hidden="true" class="garage-floor"></div><div class="hero-content"><div class="neon-sign"><img alt="" aria-hidden="true" class="neon-back" src="assets/logo-ice-mint.png"/><img alt="08Works — Built for What's Next（3回タップでシークレットガレージ）" aria-label="08Worksロゴ" class="hero-logo neon-logo" id="secret-logo" role="button" src="assets/logo-ice-mint.png" tabindex="0"/></div><p class="hero-lead">BUILT FROM IDEAS.</p><p class="hero-ja">アイディアをカタチに。</p><p class="hero-description">ジャンルにとらわれず、発想からデザイン、そしてその先のモノづくりまで。</p><div class="actions"><a class="btn light" href="#contact">製作のご相談・お見積もり <span>↗</span></a><a class="btn outline" href="#services">できることを見る <span>↓</span></a></div></div></section>
