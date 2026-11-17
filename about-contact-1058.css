@@ -1,0 +1,33 @@
+
+/* 08WORKS 10.58 — scoped About / Contact refresh */
+.studio-about,.studio-contact{position:relative;background:#071719;color:#f8f8f6;padding:32px max(5.2vw,24px) 44px;overflow:hidden;isolation:isolate}
+.studio-contact{background:#071416;border-top:1px solid #74eeee;padding-bottom:55px}
+.studio-anchor{position:absolute;top:0;left:0}
+.studio-top{display:flex;justify-content:space-between;align-items:center;gap:15px;border-bottom:1px solid #799d9c;padding-bottom:16px;font-size:14px;letter-spacing:.12em;font-weight:800;color:#92f5f1}
+.studio-top span:last-child{color:white;letter-spacing:0;font-weight:500;font-size:13px}
+.studio-about-main{position:relative;min-height:390px;display:flex;align-items:center}
+.studio-copy,.studio-contact-copy{position:relative;z-index:2;width:67%;padding:42px 0 25px}
+.studio-copy h2,.studio-contact-copy h2{font-family:Impact,'Arial Narrow',sans-serif;font-stretch:condensed;font-size:clamp(48px,6.6vw,108px);line-height:.99;letter-spacing:-.015em;margin:0 0 24px;color:#f7f7f4;font-weight:900}
+.studio-copy h2 em,.studio-contact-copy h2 em{font-style:normal;color:#8bf3ef}
+.studio-copy h3,.studio-contact-copy h3{font-size:clamp(17px,1.9vw,27px);margin:0 0 20px;line-height:1.45;color:#fff}
+.studio-rule{width:56px;height:5px;background:#8bf3ef;margin:20px 0}
+.studio-copy p,.studio-contact-copy p{font-size:clamp(13px,1.1vw,16px);line-height:1.95;margin:0;max-width:600px}
+.studio-about-photo{position:absolute;inset:0 -5.2vw 0 36%;background:linear-gradient(90deg,#071719 1%,rgba(7,23,25,.48) 25%,rgba(7,23,25,0) 62%),url('assets/about-studio-1058.webp') center right/cover no-repeat;z-index:0}
+.studio-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;border-top:1px solid #76918e;border-bottom:1px solid #76918e;padding:25px 0}
+.studio-step{display:flex;align-items:center;gap:14px;min-width:0;position:relative}
+.studio-step:not(:last-child):after{content:'›';position:absolute;right:8px;color:white;font-size:32px;font-weight:200}
+.studio-step-icon{color:#8bf3ef;font-size:35px;line-height:1;min-width:44px;text-align:center}
+.studio-step b{display:block;font-size:clamp(15px,1.5vw,22px);white-space:nowrap}
+.studio-step b i{font-style:normal;color:#8bf3ef;font-size:15px;margin-right:8px}
+.studio-step small{display:block;color:#fff;font-size:clamp(10px,.95vw,13px);margin-top:4px}
+.studio-contact-main{position:relative;min-height:480px;display:flex;align-items:center}
+.studio-contact-copy{width:55%;padding:45px 0 15px}
+.studio-contact-copy h2{font-size:clamp(62px,7.5vw,120px)}
+.studio-contact-photo{position:absolute;inset:0 -5.2vw 0 38%;background:linear-gradient(90deg,#071416 0%,rgba(7,20,22,.55) 23%,rgba(7,20,22,0) 52%),url('assets/contact-wall-1058.webp') center center/cover no-repeat}
+.studio-wallmark{position:absolute;right:13%;top:38%;width:37%;max-width:310px;height:auto;filter:drop-shadow(0 2px 2px rgba(0,0,0,.15));opacity:.9}
+.studio-cta{display:flex;justify-content:space-between;align-items:center;max-width:430px;background:#8bf3ef;color:#061517!important;font-weight:800;font-size:clamp(15px,1.5vw,20px);padding:20px 25px;margin:28px 0 18px;text-decoration:none!important;transition:background .2s,transform .2s}
+.studio-cta:hover{background:#b7fffa;transform:translateY(-2px)}
+.studio-cta span{font-size:28px}
+.studio-ig{color:#fff!important;font-size:13px;text-decoration:none!important}
+.studio-ig:hover{text-decoration:underline!important}
+@media(max-width:760px){.studio-about,.studio-contact{padding:24px 22px 32px}.studio-top{font-size:11px}.studio-top span:last-child{font-size:10px}.studio-about-main{min-height:430px;align-items:flex-start}.studio-copy{width:100%;padding:34px 0 0}.studio-copy h2{font-size:clamp(45px,10.8vw,75px)}.studio-about-photo{inset:100px -22px 0 0;background:linear-gradient(180deg,#071719 0%,rgba(7,23,25,.7) 25%,rgba(7,23,25,.08) 100%),url('assets/about-studio-1058.webp') center/cover no-repeat;opacity:.75}.studio-copy p{font-size:13px}.studio-desktop{display:none}.studio-steps{grid-template-columns:repeat(2,1fr);gap:24px 10px;padding:20px 0}.studio-step:not(:last-child):after{display:none}.studio-step-icon{font-size:28px;min-width:28px}.studio-step b{font-size:16px}.studio-step b i{font-size:12px}.studio-step small{font-size:10px}.studio-contact-main{min-height:600px;align-items:flex-start}.studio-contact-copy{width:100%;padding:35px 0 0}.studio-contact-copy h2{font-size:clamp(62px,12vw,92px)}.studio-contact-photo{inset:170px -22px 0 0;background:linear-gradient(180deg,#071416 0%,rgba(7,20,22,.9) 20%,rgba(7,20,22,.05) 70%),url('assets/contact-wall-1058.webp') center/cover no-repeat;opacity:.85}.studio-wallmark{top:51%;right:17%;width:48%}.studio-contact-copy h3{font-size:18px}.studio-contact-copy p{font-size:12px}.studio-cta{max-width:100%;padding:16px;font-size:15px}.studio-ig{font-size:11px}}
